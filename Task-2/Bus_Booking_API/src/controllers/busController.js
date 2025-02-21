@@ -31,4 +31,20 @@ const updateBus = async (req, res) => {
     }
 };
 
-module.exports = { getAllBuses, addBus, updateBus };
+const deleteBus = async (req, res) => {
+    try {
+        const { busId } = req.params;
+
+        const deletedBus = await Bus.findByIdAndDelete(busId);
+
+        if (!deletedBus) {
+            return res.status(404).json({ message: 'Bus not found' });
+        }
+
+        res.json({ message: 'Bus deleted successfully' });
+    } catch (error) {
+        res.status(500).json({ message: 'Server error while deleting bus' });
+    }
+};
+
+module.exports = { getAllBuses, addBus, updateBus, deleteBus };
