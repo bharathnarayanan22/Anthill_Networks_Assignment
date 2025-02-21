@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "6c4fc82d-8c0b-4769-b58a-ea6e51dac337",
+		"name": "Bus_Booking_API's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33495709"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Thala\",\r\n    \"email\": \"thala@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"role\": \"admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"thala@gmail.com\",\r\n    \"password\": \"1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/routes/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/routes/",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"routes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/routes/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"source\": \"Chennai\",\r\n    \"destination\": \"Bangalore\",\r\n    \"stops\": [\"Vellore\", \"Krishnagiri\", \"Hosur\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/routes/",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"routes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/routes/67b7456133ae534114b71136",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"source\": \"Chennai\",\r\n    \"destination\": \"Hosur\",\r\n    \"stops\": [\"Vellore\", \"Krishnagiri\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/routes/67b7456133ae534114b71136",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"routes",
+						"67b7456133ae534114b71136"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/buses/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/buses/",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"buses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/buses/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Bus1\",\r\n  \"number\": \"TN-45-7788\",\r\n  \"capacity\": 100,\r\n  \"availableSeats\": 100,\r\n  \"routeId\": \"67b7456133ae534114b71136\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/buses/",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"buses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/buses/67b746d133ae534114b7113f",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Bus1\",\r\n  \"number\": \"TN-45-7788\",\r\n  \"capacity\": 60,\r\n  \"availableSeats\": 60,\r\n  \"routeId\": \"67b7456133ae534114b71136\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/buses/67b746d133ae534114b7113f",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"buses",
+						"67b746d133ae534114b7113f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/buses/67b746d133ae534114b7113f",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/buses/67b746d133ae534114b7113f",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"buses",
+						"67b746d133ae534114b7113f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/bookings/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/bookings/",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/bookings/book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"busId\": \"67b746d133ae534114b7113f\",\r\n  \"seatNumber\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/bookings/book",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/bookings/cancel/67b7481933ae534114b71148",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/bookings/cancel/67b7481933ae534114b71148",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings",
+						"cancel",
+						"67b7481933ae534114b71148"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/auth/logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDA2NzIxOX0._e7UoGOtplfRkPZm_4tOZaY1gGAHmsF-u0yc4wIsOyI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2I3MmNmZmI2MjM2ZWY0MzY3ODZiZjciLCJpYXQiOjE3NDAwNjM2MTksImV4cCI6MTc0MDY2ODQxOX0.u2KPa1hKda_VCBvasNlOaZw5OQKUxXGvZZEyEmYU_BE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bus-booking-api-ezw2.onrender.com/api/auth/logout",
+					"protocol": "https",
+					"host": [
+						"bus-booking-api-ezw2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
