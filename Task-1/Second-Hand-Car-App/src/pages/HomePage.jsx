@@ -12,6 +12,7 @@ import "../styles/HomePage.css";
 
 const adminEmails = [
   "bharathnarayanan.pa2022cse@sece.ac.in",
+  "trustwheels22@gmail.com",
 ]; 
 
 const HomePage = () => {

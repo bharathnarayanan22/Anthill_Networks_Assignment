@@ -247,7 +247,7 @@ const PurchaseRequests = () => {
                       {request.carName}
                     </Typography>
                     <Typography color="text.secondary">
-                      Price: {request.price}
+                      Price: ₹{request.price}
                     </Typography>
                     <Typography color="text.secondary">
                       Requested by: {userName}
