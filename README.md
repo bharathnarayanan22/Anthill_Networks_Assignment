@@ -35,3 +35,14 @@ This is a **Second Hand Car Application** built with **ReactJS** for the fronten
 
 The application is deployed on **Vercel**. You can access it here:  
 👉 [TrustWheels Live Demo](https://trustwheels.vercel.app/)
+
+
+# Task-2: Bus Booking App API's
+
+This is a **Bus Booking System API** built using **Node.js** and **Express.js** with **MongoDB** for data storage. The API supports user authentication, bus management, route handling, and booking functionalities, providing a seamless experience for both passengers and administrators.
+
+This is deployed in **Render** instead of EC2 because, I don't have an account on AWS
+
+**Backend Deployed API Link**: https://bus-booking-api-ezw2.onrender.com
+
+👉 **The API documentation and Postman Collection are attached to the repository itself.**
